@@ -1,0 +1,46 @@
+ Project: Theatre Ticket Booking System
+Title: MoviePass
+
+Target Audience:
+Cinema Staff, Theater Owners, Ticket Counters, Moviegoers (via console kiosk)
+
+Type: B2C / B2B
+
+Timeline: 2 weeks (approx.)
+
+Budget: Rs: 0
+
+Total Members: 1
+
+Feature:
+Login system (Admin and Staff)
+
+Add/Edit/Delete movie details (title, genre, duration, language)
+
+Manage show timings and screen allocation
+
+Seat layout per screen (rows × columns)
+
+Real-time seat booking system
+
+Show availability display
+
+Book multiple tickets with seat selection
+
+Ticket cancellation and refund tracking
+
+Pricing system based on seat type (Regular, VIP)
+
+Booking confirmation with ticket ID
+
+View all bookings per show
+
+Filter bookings by date, movie, or customer
+
+Report generation (daily sales, occupancy rate)
+
+Customer feedback for movies/shows
+
+Movie schedule preview for customers
+
+Handle full-house and overbooking prevention
