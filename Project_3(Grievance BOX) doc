@@ -1,0 +1,38 @@
+Project: Complaint Management System
+Title:Grievance BOX
+
+Target Audience:
+College Administration, Local Government Offices, Housing Societies, Customer Support Teams
+
+Type: B2B / B2C
+
+Timeline: 1 weeks (approx.)
+
+Budget: Rs: 0
+
+Total Members: 2
+
+Feature:
+User registration (students, citizens, customers)
+
+File a complaint with category and description
+
+Admin login to manage and respond to complaints
+
+Complaint status tracking (Pending, In Progress, Resolved)
+
+Search/filter complaints by type, user, or status
+
+Auto timestamping on submission and resolution
+
+Assign complaints to departments or employees
+
+Notification system (console-based alerts)
+
+Complaint history for each user
+
+Feedback on complaint resolution
+
+Escalation handling (if complaint not resolved in time)
+
+Generate reports for unresolved complaints
