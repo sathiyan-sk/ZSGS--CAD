@@ -1,0 +1,44 @@
+ Project: Library Management System (Librarian-Focused)
+Title:LibroDesk
+
+Target Audience:
+Librarians, Library Admins, College/School Library Staff, Book Custodians
+
+Type: B2B
+
+Timeline: 2 weeks (approx.)
+
+Budget: Rs: 0
+
+Total Members: 10
+
+Feature (Librarian-Focused):
+Login Authentication for Librarians
+
+Add/edit/delete books
+
+Maintain book categories (e.g., Fiction, Academic, Magazines)
+
+Track issued and returned books
+
+Borrowing books with return deadlines
+
+Check overdue books and calculate fines
+
+Maintain student/member records
+
+Approve/Reject new member registrations
+
+Notifications/reminders for due dates (console output)
+
+View transaction history per member
+
+Search/filter books by title, author, ISBN, genre
+
+Generate reports: issued books, fines collected, most borrowed books
+
+Backup/export data (optional CSV support)
+
+Stock count and damaged/lost book management
+
+Feedback log from readers
