@@ -44,4 +44,126 @@ Health check history for donors
 
 Feedback from recipients
 
-Blood donation campaigns/events page
+Blood donation campaign
+
+
+
+
+Data Model: Blood Bank Management System
+🔹 DonorInfo: Class
+Stores details of registered blood donors.
+
+DonorId: Integer
+
+FirstName: String
+
+LastName: String
+
+Gender: String
+
+DOB: String
+
+BloodGroup: String
+
+MobileNo: Long/String
+
+EmailId: String
+
+Address: String
+
+LastDonationDate: String
+
+Username: String
+
+Password: String
+
+🔹 Login: Class
+Handles user login for donors and admins.
+
+UserName: String
+
+Password: String
+
+🔹 PatientRequest: Class
+Represents a blood request made for a patient.
+
+RequestId: Integer
+
+PatientName: String
+
+BloodGroup: String
+
+RequiredUnits: Integer
+
+HospitalName: String
+
+DoctorName: String
+
+ContactNo: Long/String
+
+RequestDate: String
+
+Status: String (Pending, Fulfilled, Cancelled)
+
+🔹 DonationRecord: Class
+Tracks each successful blood donation.
+
+DonationId: Integer
+
+DonorId: Integer
+
+DonationDate: String
+
+UnitsDonated: Integer
+
+DonationCenter: String
+
+🔹 Inventory: Class
+Maintains blood stock by group and units.
+
+InventoryId: Integer
+
+BloodGroup: String
+
+AvailableUnits: Integer
+
+LastUpdated: String
+
+🔹 Admin: Class
+Responsible for managing donors, inventory, and requests.
+
+AdminId: Integer
+
+AdminName: String
+
+UserName: String
+
+Password: String
+
+EmailId: String
+
+🔹 Notification: Class
+Messages/alerts for donation camps, approvals, or reminders.
+
+NotificationId: Integer
+
+UserId: Integer
+
+Message: String
+
+SentDate: String
+
+🔹 DonationCamp: Class
+Details of upcoming or past blood donation camps.
+
+CampId: Integer
+
+CampName: String
+
+Location: String
+
+Date: String
+
+Time: String
+
+OrganizedBy: String
