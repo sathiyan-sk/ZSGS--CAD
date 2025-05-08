@@ -23,7 +23,7 @@ Complaint status tracking (Pending, In Progress, Resolved)
 
 Search/filter complaints by type, user, or status
 
-Auto timestamping on submission and resolution
+Auto-timestamping on submission and resolution
 
 Assign complaints to departments or employees
 
@@ -36,3 +36,110 @@ Feedback on complaint resolution
 Escalation handling (if complaint not resolved in time)
 
 Generate reports for unresolved complaints
+
+
+
+Data Model: Complaint Management System
+🔹 UserInfo: Class
+Represents a registered user who submits complaints.
+
+UserId: Integer
+
+FirstName: String
+
+LastName: String
+
+MobileNo: Long/String
+
+EmailId: String
+
+Password: String
+
+ConfirmPassword: String
+
+UserName: String
+
+DOB: String
+
+🔹 Login: Class
+Used during login operations for both users and admins.
+
+UserName: String
+
+Password: String
+
+🔹 Complaint: Class
+Holds individual complaint information.
+
+ComplaintId: Integer
+
+UserId: Integer
+
+Category: String
+
+Description: String
+
+Status: String (Pending, In Progress, Resolved, etc.)
+
+ComplaintDate: String
+
+🔹 Admin: Class
+Represents the admin responsible for managing complaints.
+
+AdminId: Integer
+
+AdminName: String
+
+EmailId: String
+
+Password: String
+
+UserName: String
+
+🔹 ComplaintResponse: Class
+Stores admin responses to complaints.
+
+ResponseId: Integer
+
+ComplaintId: Integer
+
+AdminId: Integer
+
+ResponseText: String
+
+ResponseDate: String
+
+🔹 Category: Class
+Allows categorisation of complaints (e.g., Electricity, Water, Sanitation).
+
+CategoryId: Integer
+
+CategoryName: String
+
+Description: String
+
+🔹 Notification: Class
+For system or admin-generated alerts to users.
+
+NotificationId: Integer
+
+UserId: Integer
+
+Message: String
+
+SentDate: String
+
+🔹 Feedback: Class
+User-provided feedback after complaint resolution.
+
+FeedbackId: Integer
+
+ComplaintId: Integer
+
+UserId: Integer
+
+Rating: Integer (1–5)
+
+Comment: String
+
+FeedbackDate: String
