@@ -2,7 +2,7 @@
 Title: MoviePass
 
 Target Audience:
-Cinema Staff, Theater Owners, Ticket Counters, Moviegoers (via console kiosk)
+Cinema Staff, Theatre Owners, Ticket Counters, Moviegoers (via console kiosk)
 
 Type: B2C / B2B
 
@@ -44,3 +44,142 @@ Customer feedback for movies/shows
 Movie schedule preview for customers
 
 Handle full-house and overbooking prevention
+
+
+
+
+
+ Data Model: Theater Ticket Booking System
+🔹 UserInfo: Class
+Represents customers who book tickets.
+
+UserId: Integer
+
+FirstName: String
+
+LastName: String
+
+MobileNo: Long/String
+
+EmailId: String
+
+Password: String
+
+ConfirmPassword: String
+
+UserName: String
+
+DOB: String
+
+🔹 Login: Class
+Used for user login authentication.
+
+UserName: String
+
+Password: String
+
+🔹 Movie: Class
+Represents a movie available for booking.
+
+MovieId: Integer
+
+Title: String
+
+Language: String
+
+Genre: String
+
+Duration: String (e.g., "2h 15m")
+
+Rating: String
+
+ReleaseDate: String
+
+🔹 Show: Class
+Represents a specific showtime for a movie.
+
+ShowId: Integer
+
+MovieId: Integer
+
+TheaterId: Integer
+
+ShowDate: String
+
+ShowTime: String
+
+AvailableSeats: Integer
+
+PricePerTicket: Double
+
+🔹 Theater: Class
+Details of the theater where movies are shown.
+
+TheaterId: Integer
+
+Name: String
+
+Location: String
+
+TotalSeats: Integer
+
+ContactNo: Long/String
+
+🔹 Booking: Class
+Stores details of a ticket booking made by a user.
+
+BookingId: Integer
+
+UserId: Integer
+
+ShowId: Integer
+
+NumberOfTickets: Integer
+
+TotalAmount: Double
+
+BookingDate: String
+
+Status: String (Confirmed, Cancelled)
+
+🔹 Payment: Class
+Stores payment-related details.
+
+PaymentId: Integer
+
+BookingId: Integer
+
+PaymentMode: String (Credit Card, UPI, Net Banking)
+
+PaymentDate: String
+
+AmountPaid: Double
+
+TransactionId: String
+
+🔹 Seat: Class
+Represents an individual seat for a show.
+
+SeatId: Integer
+
+ShowId: Integer
+
+SeatNumber: String
+
+SeatType: String (Regular, VIP)
+
+IsBooked: Boolean
+
+🔹 Admin: Class
+Manages movies, shows, and theatres.
+
+AdminId: Integer
+
+AdminName: String
+
+EmailId: String
+
+Password: String
+
+UserName: String
+
